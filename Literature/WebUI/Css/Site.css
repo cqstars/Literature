@@ -1,0 +1,54 @@
+﻿body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+    font-family: Microsoft YaHei,'宋体', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+p {
+    text-indent: 2em;
+}
+
+h1, h3, p, a, button {
+    font-family: 'Microsoft YaHei';
+    text-align: justify;
+}
+
+
+/*---------阿里字体图标-------------*/
+
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -0.5em;
+    fill: currentColor;
+    /* color:#ffffff;*/
+    margin-right: 3px;
+    overflow: hidden;
+}
+/*---------阿里字体图标-------------*/
+
+/*--------------------------------美化分页按钮----------------------------------------------------*/
+.pagination.square {
+    margin: 0; /* 去除外边距 */
+}
+
+    .pagination.square > li > a,
+    .pagination.square > li > span {
+        margin: 0 5px;
+        border: 1px solid #dddddd; /* 设置所有的边框都为1像素 */
+    }
+
+    .pagination.square > li:first-child > a,
+    .pagination.square > li:first-child > span,
+    .pagination.square > li:last-child > a,
+    .pagination.square > li:last-child > span {
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 0px; /* 取消圆角 */
+    }
+/*--------------------------------美化分页按钮----------------------------------------------------*/
+
+/***-----------------------------------Ajax效果------------------------------------------------*/

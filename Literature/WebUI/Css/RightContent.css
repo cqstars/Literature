@@ -1,0 +1,45 @@
+﻿  .conter {
+            width: 1000px;
+            /*height: 200px;*/
+            border: 1px solid #b4b4cb;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px #858596;
+            margin: 0px auto;
+            padding: 0px; 
+        }
+
+    .conter h1 {
+        height: 35px;
+        font-size: 12px;
+        background: url('../Images/bg/height35_bg.jpg') repeat-x;
+        line-height: 35px;
+        color:#ffffff;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+
+/*---------阿里字体图标-------------*/
+
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -0.45em;
+    fill: currentColor;
+    /* color:#ffffff;*/
+    margin-right: 3px;
+    overflow: hidden;
+}
+/*---------阿里字体图标-------------*/
+input {
+height:25px;
+line-height:25px;
+border:1px solid #858596;
+border-radius:2px;
+/*去了 input 焦点 边框
+ outline:none;*/
+text-indent:3px;
+}
+input:-webkit-autofill {  
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;  
+}  

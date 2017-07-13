@@ -1,0 +1,305 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: 12px/1.62 "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif;
+    color: #333;
+}
+
+/*-------------------------公共样式--------------------------------------------------*/
+.left, .l {
+    float: left;
+}
+
+.right, .r {
+    float: right;
+}
+
+.clearfix, .cf {
+    *zoom: 1;
+}
+
+    .clearfix:after, .cf:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+.clear, .cl {
+    clear: both;
+}
+
+ol, ul, dl {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    blr: expression(this.onFocus=this.blur());
+}
+/*---------------------------------公共样式结束------------------------------------------------------------------*/
+/*---------阿里字体图标-------------*/
+
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -0.45em;
+    fill: currentColor;
+    /* color:#ffffff;*/
+    margin-right: 3px;
+    overflow: hidden;
+}
+/*---------阿里字体图标-------------*/
+/*------------------框架布局--------------------------------------------------------*/
+
+#hd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: #08a2ba;
+}
+
+#bd {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    bottom: 40px;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    _height: 100%;
+}
+
+#side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 275px;
+    _height: 100%;
+    background: #28323b;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#side::after{
+    clear:both;
+}
+
+#main {
+    position: absolute;
+    _position: static;
+    top: 0;
+    right: 0;
+    bottom:0px;
+    left: 280px;
+    overflow: auto;
+    _overflow: hidden;
+    _height: 100%;
+    _margin-left: 210px;
+    background: #ffffff;
+  
+}
+
+    #main::after {
+    clear:both;
+    }
+#ft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #24292d;
+}
+/* 与布局无关，一些说明性内容样式 */
+.tit-layout {
+    margin: 30px 0 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.copyright {
+    font-weight: bold;
+    text-align: center;
+}
+
+#feature {
+    width: 100%;
+    /*line-height: 4;*/
+   
+}
+
+    #feature .hd {
+        padding: 20px 15px;
+    }
+
+        #feature .hd h2 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+    #feature .bd ol {
+        margin-top: 0;
+    }
+
+    #feature .bd h3 {
+        margin: 0;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+
+    #feature .ft {
+        padding: 10px 15px 30px;
+    }
+
+#Mycontent {
+    padding:20px 10px;
+}
+
+/*------------------框架布局--------------------------------------------------------*/
+/*.headlogo {
+    width: 280px;
+    height: 90px;
+    /*background: url('../Images/logo/logo_sm.png') center center no-repeat;
+    line-height: 90px;
+    text-align: center;
+    overflow: hidden;
+}*/
+.headlogo {
+    width: 360px;
+}
+
+.box {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    *display: block;
+    *font-size: 15px;
+    width: 360px;
+    height: 88px;
+    /*border: 1px solid #eee;*/
+}
+
+    .box img {
+        vertical-align: middle;
+    }
+
+/*-------------------------------上面导航设置-----------------------------------------*/
+.headnav li {
+    float: left;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+#hd .headnav li a {
+    display: block;
+    width: 70px;
+    padding: 35px 0 5px 0;
+    background: #266c83 url('../Images/bg/ico_bg.png') no-repeat;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #B8C8D2;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+#hd .headnav li#menu_0 a {
+    background-position: center -295px;
+}
+
+#hd .headnav li#menu_1 a {
+    background-position: center -195px;
+}
+
+#hd .headnav li#menu_2 a {
+    background-position: center -95px;
+}
+
+#hd .headnav li#menu_3 a {
+    background-position: center -395px;
+}
+
+#hd .headnav li.current-menu a {
+    width: 120px;
+    background-color: #043f52;
+}
+
+#hd .headnav li a:hover {
+    background-color: #043f52;
+}
+/*-----------------------------------------------------左侧导航---------------------------------------------*/
+#side dl dt {
+    width: 280px;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+    box-shadow: 0px -1px 5px rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 12px;
+    background: #2A3542 url('../Images/bg/ico_small.png') right -30px no-repeat;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+#side .left_barnd {
+    width: 280px;
+    height: 30px;
+    background: url('../Images/bg/Left_down_arrow.png') top center no-repeat;
+}
+
+#side dl dd {
+    display: none;
+    margin-bottom: 2px;
+}
+
+    #side dl dd ul li {
+        width: 240px;
+        float: right;
+        height: 40px;
+        line-height: 40px;
+        text-indent: 10px;
+        box-shadow: 1px 0px 1px #333333;
+        box-shadow: -1px 0px 1px #333333;
+    }
+
+        #side dl dd ul li a {
+            width: 240px;
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            background: #454c5d;
+            margin-left: 20px;
+            /* border-radius: 2px;
+      box-shadow: 1px 1px 1px #B8C8D2;*/
+            color: #ffffff;
+        }
+
+            #side dl dd ul li a:hover {
+                color: #009beb;
+                background: #ffffff;
+                border-top: 1px solid #B8C8D2;
+                border-left: 1px solid #B8C8D2;
+                border-bottom: 1px solid #B8C8D2;
+            }
+
+            #side dl dd ul li a.current-menuleft {
+                background: #fff url('../Images/bg/ico_small.png') right -87px no-repeat;
+                /*font-weight: bold;*/
+                color: #333;
+                border-top: 1px solid #B8C8D2;
+                border-left: 1px solid #B8C8D2;
+                border-bottom: 1px solid #B8C8D2;
+            }
